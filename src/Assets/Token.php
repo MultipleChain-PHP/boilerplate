@@ -35,29 +35,29 @@ class Token extends Contract implements TokenInterface
 
     /**
      * @param string $owner
-     * @return float
+     * @return string
      */
-    public function getBalance(string $owner): float
+    public function getBalance(string $owner): string
     {
-        return 0.0;
+        return '0';
     }
 
     /**
-     * @return float
+     * @return string
      */
-    public function getTotalSupply(): float
+    public function getTotalSupply(): string
     {
-        return 0.0;
+        return '0';
     }
 
     /**
      * @param string $owner
      * @param string $spender
-     * @return float
+     * @return string
      */
-    public function getAllowance(string $owner, string $spender): float
+    public function getAllowance(string $owner, string $spender): string
     {
-        return 0.0;
+        return '0';
     }
 
     /**

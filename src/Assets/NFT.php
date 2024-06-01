@@ -27,11 +27,11 @@ class NFT extends Contract implements NftInterface
 
     /**
      * @param string $owner
-     * @return float
+     * @return string
      */
-    public function getBalance(string $owner): float
+    public function getBalance(string $owner): string
     {
-        return 0.0;
+        return '0';
     }
 
     /**

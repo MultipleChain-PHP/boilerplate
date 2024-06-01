@@ -27,11 +27,11 @@ class CoinTransaction extends Transaction implements CoinTransactionInterface
     }
 
     /**
-     * @return float
+     * @return string
      */
-    public function getAmount(): float
+    public function getAmount(): string
     {
-        return 0.0;
+        return '0';
     }
 
     /**

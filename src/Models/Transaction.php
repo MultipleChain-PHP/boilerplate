@@ -89,11 +89,11 @@ class Transaction implements TransactionInterface
     }
 
     /**
-     * @return float
+     * @return string
      */
-    public function getFee(): float
+    public function getFee(): string
     {
-        return 0.0;
+        return '0';
     }
 
     /**
