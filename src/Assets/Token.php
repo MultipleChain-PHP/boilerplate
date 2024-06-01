@@ -6,6 +6,7 @@ namespace MultipleChain\Boilerplate\Assets;
 
 use MultipleChain\Interfaces\Assets\TokenInterface;
 use MultipleChain\Boilerplate\Services\TransactionSigner;
+use MultipleChain\Utils\Number;
 
 class Token extends Contract implements TokenInterface
 {
@@ -35,29 +36,29 @@ class Token extends Contract implements TokenInterface
 
     /**
      * @param string $owner
-     * @return string
+     * @return Number
      */
-    public function getBalance(string $owner): string
+    public function getBalance(string $owner): Number
     {
-        return '0';
+        return new Number('0');
     }
 
     /**
-     * @return string
+     * @return Number
      */
-    public function getTotalSupply(): string
+    public function getTotalSupply(): Number
     {
-        return '0';
+        return new Number('0');
     }
 
     /**
      * @param string $owner
      * @param string $spender
-     * @return string
+     * @return Number
      */
-    public function getAllowance(string $owner, string $spender): string
+    public function getAllowance(string $owner, string $spender): Number
     {
-        return '0';
+        return new Number('0');
     }
 
     /**

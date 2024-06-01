@@ -8,6 +8,7 @@ use MultipleChain\Boilerplate\Provider;
 use MultipleChain\Interfaces\ProviderInterface;
 use MultipleChain\Interfaces\Assets\CoinInterface;
 use MultipleChain\Boilerplate\Services\TransactionSigner;
+use MultipleChain\Utils\Number;
 
 class Coin implements CoinInterface
 {
@@ -50,12 +51,12 @@ class Coin implements CoinInterface
 
     /**
      * @param string $owner
-     * @return string
+     * @return Number
      */
-    public function getBalance(string $owner): string
+    public function getBalance(string $owner): Number
     {
         $this->provider->isTestnet(); // just for phpstan
-        return '0';
+        return new Number(0);
     }
 
     /**

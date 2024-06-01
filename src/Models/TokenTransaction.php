@@ -7,6 +7,7 @@ namespace MultipleChain\Boilerplate\Models;
 use MultipleChain\Enums\AssetDirection;
 use MultipleChain\Enums\TransactionStatus;
 use MultipleChain\Interfaces\Models\TokenTransactionInterface;
+use MultipleChain\Utils\Number;
 
 class TokenTransaction extends ContractTransaction implements TokenTransactionInterface
 {
@@ -27,11 +28,11 @@ class TokenTransaction extends ContractTransaction implements TokenTransactionIn
     }
 
     /**
-     * @return string
+     * @return Number
      */
-    public function getAmount(): string
+    public function getAmount(): Number
     {
-        return '0';
+        return new Number('0');
     }
 
     /**

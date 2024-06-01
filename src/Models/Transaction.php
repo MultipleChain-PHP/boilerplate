@@ -9,6 +9,7 @@ use MultipleChain\Enums\TransactionType;
 use MultipleChain\Enums\TransactionStatus;
 use MultipleChain\Interfaces\ProviderInterface;
 use MultipleChain\Interfaces\Models\TransactionInterface;
+use MultipleChain\Utils\Number;
 
 class Transaction implements TransactionInterface
 {
@@ -89,11 +90,11 @@ class Transaction implements TransactionInterface
     }
 
     /**
-     * @return string
+     * @return Number
      */
-    public function getFee(): string
+    public function getFee(): Number
     {
-        return '0';
+        return new Number('0');
     }
 
     /**
