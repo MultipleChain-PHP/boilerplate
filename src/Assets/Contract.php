@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace MultipleChain\Boilerplate\Assets;
 
 use MultipleChain\Boilerplate\Provider;
+use MultipleChain\Interfaces\ProviderInterface;
 use MultipleChain\Interfaces\Assets\ContractInterface;
-use MultipleChain\Interfaces\Services\ProviderInterface;
 
 class Contract implements ContractInterface
 {

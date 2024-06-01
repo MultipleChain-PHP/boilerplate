@@ -7,7 +7,7 @@ namespace MultipleChain\Boilerplate\Models;
 use MultipleChain\Boilerplate\Provider;
 use MultipleChain\Enums\TransactionType;
 use MultipleChain\Enums\TransactionStatus;
-use MultipleChain\Interfaces\Services\ProviderInterface;
+use MultipleChain\Interfaces\ProviderInterface;
 use MultipleChain\Interfaces\Models\TransactionInterface;
 
 class Transaction implements TransactionInterface

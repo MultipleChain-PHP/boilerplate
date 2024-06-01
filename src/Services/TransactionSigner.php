@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace MultipleChain\Boilerplate\Services;
 
 use MultipleChain\Boilerplate\Provider;
-use MultipleChain\Interfaces\Services\ProviderInterface;
+use MultipleChain\Interfaces\ProviderInterface;
 use MultipleChain\Interfaces\Services\TransactionSignerInterface;
 
 class TransactionSigner implements TransactionSignerInterface

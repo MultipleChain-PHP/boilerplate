@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace MultipleChain\Boilerplate\Assets;
 
 use MultipleChain\Boilerplate\Provider;
+use MultipleChain\Interfaces\ProviderInterface;
 use MultipleChain\Interfaces\Assets\CoinInterface;
-use MultipleChain\Interfaces\Services\ProviderInterface;
 use MultipleChain\Boilerplate\Services\TransactionSigner;
 
 class Coin implements CoinInterface

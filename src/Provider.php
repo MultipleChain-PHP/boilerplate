@@ -5,15 +5,15 @@ declare(strict_types=1);
 namespace MultipleChain\Boilerplate;
 
 use MultipleChain\Enums\ErrorType;
-use MultipleChain\Types\NetworkConfig;
-use MultipleChain\Interfaces\Services\ProviderInterface;
+use MultipleChain\Interfaces\ProviderInterface;
+use MultipleChain\BaseNetworkConfig as NetworkConfig;
 
 class Provider implements ProviderInterface
 {
     /**
      * @var NetworkConfig
      */
-    private NetworkConfig $network;
+    public NetworkConfig $network;
 
     /**
      * @var Provider|null
@@ -21,11 +21,11 @@ class Provider implements ProviderInterface
     private static ?Provider $instance;
 
     /**
-     * @param NetworkConfig $networkConfig
+     * @param array<string,mixed> $network
      */
-    public function __construct(NetworkConfig $networkConfig)
+    public function __construct(array $network)
     {
-        $this->update($networkConfig);
+        $this->update($network);
     }
 
     /**
@@ -40,25 +40,25 @@ class Provider implements ProviderInterface
     }
 
     /**
-     * @param NetworkConfig $networkConfig
+     * @param array<string,mixed> $network
      * @return void
      */
-    public static function initialize(NetworkConfig $networkConfig): void
+    public static function initialize(array $network): void
     {
         if (null !== self::$instance) {
             throw new \RuntimeException(ErrorType::PROVIDER_IS_ALREADY_INITIALIZED->value);
         }
-        self::$instance = new self($networkConfig);
+        self::$instance = new self($network);
     }
 
     /**
-     * @param NetworkConfig $networkConfig
+     * @param array<string,mixed> $network
      * @return void
      */
-    public function update(NetworkConfig $networkConfig): void
+    public function update(array $network): void
     {
-        $this->network = $networkConfig;
         self::$instance = $this;
+        $this->network = new NetworkConfig($network);
     }
 
     /**

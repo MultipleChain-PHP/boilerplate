@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MultipleChain-PHP/definitions.git",
-                "reference": "0c6abfa757ddc400ce47931240f78ced436c732e"
+                "reference": "c15144e0ab4be2a3179bbb1cf3f0415778c619ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MultipleChain-PHP/definitions/zipball/0c6abfa757ddc400ce47931240f78ced436c732e",
-                "reference": "0c6abfa757ddc400ce47931240f78ced436c732e",
+                "url": "https://api.github.com/repos/MultipleChain-PHP/definitions/zipball/c15144e0ab4be2a3179bbb1cf3f0415778c619ef",
+                "reference": "c15144e0ab4be2a3179bbb1cf3f0415778c619ef",
                 "shasum": ""
             },
             "require-dev": {
@@ -46,7 +46,7 @@
                 "issues": "https://github.com/MultipleChain-PHP/definitions/issues",
                 "source": "https://github.com/MultipleChain-PHP/definitions/tree/0.1.0"
             },
-            "time": "2024-06-01T04:33:00+00:00"
+            "time": "2024-06-01T05:55:36+00:00"
         },
         {
             "name": "multiplechain/utils",
