@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MultipleChain\EvmChains\Tests;
+namespace MultipleChain\Boilerplate\Tests;
 
 class ProviderTest extends BaseTest
 {

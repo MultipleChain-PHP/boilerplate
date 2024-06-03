@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace MultipleChain\EvmChains\Tests\Models;
+namespace MultipleChain\Boilerplate\Tests\Models;
 
 use MultipleChain\Enums\TransactionType;
 use MultipleChain\Enums\TransactionStatus;
-use MultipleChain\EvmChains\Tests\BaseTest;
-use MultipleChain\EvmChains\Models\Transaction;
+use MultipleChain\Boilerplate\Tests\BaseTest;
+use MultipleChain\Boilerplate\Models\Transaction;
 
 class TransactionTest extends BaseTest
 {

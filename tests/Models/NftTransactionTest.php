@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace MultipleChain\EvmChains\Tests\Models;
+namespace MultipleChain\Boilerplate\Tests\Models;
 
 use MultipleChain\Enums\AssetDirection;
 use MultipleChain\Enums\TransactionType;
 use MultipleChain\Enums\TransactionStatus;
-use MultipleChain\EvmChains\Tests\BaseTest;
-use MultipleChain\EvmChains\Models\NftTransaction;
+use MultipleChain\Boilerplate\Tests\BaseTest;
+use MultipleChain\Boilerplate\Models\NftTransaction;
 
 class NftTransactionTest extends BaseTest
 {

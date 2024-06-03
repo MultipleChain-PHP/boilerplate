@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace MultipleChain\EvmChains\Tests\Assets;
+namespace MultipleChain\Boilerplate\Tests\Assets;
 
 use MultipleChain\Utils\Number;
-use MultipleChain\EvmChains\Assets\Token;
-use MultipleChain\EvmChains\Tests\BaseTest;
-use MultipleChain\EvmChains\Models\Transaction;
+use MultipleChain\Boilerplate\Assets\Token;
+use MultipleChain\Boilerplate\Tests\BaseTest;
+use MultipleChain\Boilerplate\Models\Transaction;
 
 class TokenTest extends BaseTest
 {

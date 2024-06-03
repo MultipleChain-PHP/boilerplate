@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace MultipleChain\EvmChains\Tests;
+namespace MultipleChain\Boilerplate\Tests;
 
 use PHPUnit\Framework\TestCase;
-use MultipleChain\EvmChains\Provider;
+use MultipleChain\Boilerplate\Provider;
 
 class BaseTest extends TestCase
 {

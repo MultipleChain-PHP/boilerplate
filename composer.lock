@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fef90f0a88664fd2b5b7d938f7e46cd4",
+    "content-hash": "2261f52aeafcfff921c4891a4f8e523f",
     "packages": [
         {
             "name": "multiplechain/definitions",
