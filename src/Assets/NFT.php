@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace MultipleChain\Boilerplate\Assets;
 
+use MultipleChain\Utils\Number;
 use MultipleChain\Interfaces\Assets\NftInterface;
 use MultipleChain\Boilerplate\Services\TransactionSigner;
-use MultipleChain\Utils\Number;
 
 class NFT extends Contract implements NftInterface
 {

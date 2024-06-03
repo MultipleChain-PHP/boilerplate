@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace MultipleChain\Boilerplate\Models;
 
+use MultipleChain\Utils\Number;
 use MultipleChain\Enums\AssetDirection;
 use MultipleChain\Enums\TransactionStatus;
 use MultipleChain\Interfaces\Models\CoinTransactionInterface;
-use MultipleChain\Utils\Number;
 
 class CoinTransaction extends Transaction implements CoinTransactionInterface
 {

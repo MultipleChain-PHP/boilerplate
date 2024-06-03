@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace MultipleChain\Boilerplate\Assets;
 
+use MultipleChain\Utils\Number;
 use MultipleChain\Boilerplate\Provider;
 use MultipleChain\Interfaces\ProviderInterface;
 use MultipleChain\Interfaces\Assets\CoinInterface;
 use MultipleChain\Boilerplate\Services\TransactionSigner;
-use MultipleChain\Utils\Number;
 
 class Coin implements CoinInterface
 {

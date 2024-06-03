@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace MultipleChain\Boilerplate\Models;
 
+use MultipleChain\Utils\Number;
 use MultipleChain\Boilerplate\Provider;
 use MultipleChain\Enums\TransactionType;
 use MultipleChain\Enums\TransactionStatus;
 use MultipleChain\Interfaces\ProviderInterface;
 use MultipleChain\Interfaces\Models\TransactionInterface;
-use MultipleChain\Utils\Number;
 
 class Transaction implements TransactionInterface
 {

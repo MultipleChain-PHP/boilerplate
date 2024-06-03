@@ -1,7 +1,7 @@
 {
     "name": "multiplechain/boilerplate",
     "version": "0.1.0",
-    "description": "MultipleChain Network Boilerplate",
+    "description": "MultipleChain Boilerplate",
     "type": "library",
     "license": "MIT",
     "autoload": {
