@@ -41,7 +41,7 @@ class Token extends Contract implements TokenInterface
      */
     public function getBalance(string $owner): Number
     {
-        return new Number('0');
+        return new Number('0', $this->getDecimals());
     }
 
     /**
@@ -49,7 +49,7 @@ class Token extends Contract implements TokenInterface
      */
     public function getTotalSupply(): Number
     {
-        return new Number('0');
+        return new Number('0', $this->getDecimals());
     }
 
     /**
@@ -59,7 +59,7 @@ class Token extends Contract implements TokenInterface
      */
     public function getAllowance(string $owner, string $spender): Number
     {
-        return new Number('0');
+        return new Number('0', $this->getDecimals());
     }
 
     /**

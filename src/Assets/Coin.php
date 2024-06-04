@@ -57,7 +57,7 @@ class Coin implements CoinInterface
     public function getBalance(string $owner): Number
     {
         $this->provider->isTestnet(); // just for phpstan
-        return new Number(0);
+        return new Number(0, $this->getDecimals());
     }
 
     /**

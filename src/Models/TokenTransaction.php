@@ -7,6 +7,7 @@ namespace MultipleChain\Boilerplate\Models;
 use MultipleChain\Utils\Number;
 use MultipleChain\Enums\AssetDirection;
 use MultipleChain\Enums\TransactionStatus;
+use MultipleChain\Boilerplate\Assets\Token;
 use MultipleChain\Interfaces\Models\TokenTransactionInterface;
 
 class TokenTransaction extends ContractTransaction implements TokenTransactionInterface
@@ -32,7 +33,7 @@ class TokenTransaction extends ContractTransaction implements TokenTransactionIn
      */
     public function getAmount(): Number
     {
-        return new Number('0');
+        return new Number('0', (new Token($this->getAddress()))->getDecimals());
     }
 
     /**

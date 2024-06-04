@@ -7,6 +7,7 @@ namespace MultipleChain\Boilerplate\Models;
 use MultipleChain\Utils\Number;
 use MultipleChain\Enums\AssetDirection;
 use MultipleChain\Enums\TransactionStatus;
+use MultipleChain\Boilerplate\Assets\Coin;
 use MultipleChain\Interfaces\Models\CoinTransactionInterface;
 
 class CoinTransaction extends Transaction implements CoinTransactionInterface
@@ -32,7 +33,7 @@ class CoinTransaction extends Transaction implements CoinTransactionInterface
      */
     public function getAmount(): Number
     {
-        return new Number('0');
+        return new Number('0', (new Coin())->getDecimals());
     }
 
     /**

@@ -33,7 +33,7 @@ class NFT extends Contract implements NftInterface
      */
     public function getBalance(string $owner): Number
     {
-        return new Number('0');
+        return new Number('0', 0);
     }
 
     /**
