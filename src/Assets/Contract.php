@@ -16,6 +16,11 @@ class Contract implements ContractInterface
     private string $address;
 
     /**
+     * @var array<string,mixed>
+     */
+    private array $cachedMethods = [];
+
+    /**
      * @var Provider
      */
     private Provider $provider;
@@ -47,6 +52,20 @@ class Contract implements ContractInterface
     {
         $this->provider->isTestnet(); // just for phpstan
         return 'example';
+    }
+
+    /**
+     * @param string $method
+     * @param mixed ...$args
+     * @return mixed
+     */
+    public function callMethodWithCache(string $method, mixed ...$args): mixed
+    {
+        if (isset($this->cachedMethods[$method])) {
+            return $this->cachedMethods[$method];
+        }
+
+        return $this->cachedMethods[$method] = $this->callMethod($method, ...$args);
     }
 
     /**
