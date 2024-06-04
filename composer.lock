@@ -57,12 +57,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MultipleChain-PHP/utils.git",
-                "reference": "6605c8282c5fc175454f43b040fb6e430bc38fe9"
+                "reference": "dbb92da07ee0a768cc8122221659f2ceaa51900d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MultipleChain-PHP/utils/zipball/6605c8282c5fc175454f43b040fb6e430bc38fe9",
-                "reference": "6605c8282c5fc175454f43b040fb6e430bc38fe9",
+                "url": "https://api.github.com/repos/MultipleChain-PHP/utils/zipball/dbb92da07ee0a768cc8122221659f2ceaa51900d",
+                "reference": "dbb92da07ee0a768cc8122221659f2ceaa51900d",
                 "shasum": ""
             },
             "require": {
@@ -98,7 +98,7 @@
                 "issues": "https://github.com/MultipleChain-PHP/utils/issues",
                 "source": "https://github.com/MultipleChain-PHP/utils/tree/0.1.3"
             },
-            "time": "2024-06-01T19:01:59+00:00"
+            "time": "2024-06-02T07:11:51+00:00"
         },
         {
             "name": "phpseclib/phpseclib",
