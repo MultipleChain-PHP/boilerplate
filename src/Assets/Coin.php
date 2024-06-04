@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace MultipleChain\Boilerplate\Assets;
 
 use MultipleChain\Utils\Number;
+use MultipleChain\Enums\ErrorType;
 use MultipleChain\Boilerplate\Provider;
 use MultipleChain\Interfaces\ProviderInterface;
 use MultipleChain\Interfaces\Assets\CoinInterface;
